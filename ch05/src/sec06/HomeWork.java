@@ -7,11 +7,13 @@ public class HomeWork
 
 	public static void main(String[] args) 
 	{
+		int maxIndex = 10; // 게시물 수
+		
 		Scanner sc = new Scanner(System.in);
 		//게시물을 새로 저장할때마다 1씩 증가 되어야 한다.
 		int nextBno = 1;
 		
-		String[][] boards = new String[10][4];
+		String[][] boards = new String[maxIndex][4];
 		
 		while(true)
 		{
@@ -38,7 +40,6 @@ public class HomeWork
 			else if(selNum.equals("2"))
 			{
 				// 새로운 게시물 입력받아 저장 게시물 번호는 nextBno의 값으로 저장 , 게시물의 저장 위치는 게시물 번호가 null인 곳을 찾아서 저장, 제목, 내용, 글쓴이 저장
-				
 				System.out.print("제목을 입력하세요 : ");
 				String title = sc.nextLine(); // 제목
 				System.out.print("내용을 입력하세요 : ");
@@ -62,8 +63,10 @@ public class HomeWork
 					nextBno++;
 					break;
 					}
+					
 					//System.out.println();
 				}
+			
 			}
 			else if(selNum.equals("3"))
 			{
@@ -117,6 +120,7 @@ public class HomeWork
 				{
 					if(delNum.equals(boards[i][0]))
 					{
+						boards[i][0] = null; // 인덱스
 						boards[i][1] = null; // 제목
 						boards[i][2] = null; // 내용 
 						boards[i][3] = null; // 글쓴이
