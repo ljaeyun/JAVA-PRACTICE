@@ -1,4 +1,4 @@
-package sec06;
+package homework;
 
 import java.util.Scanner;
 

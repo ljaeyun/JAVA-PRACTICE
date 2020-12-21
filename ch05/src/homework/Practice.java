@@ -1,6 +1,6 @@
-package sec06;
+package homework;
 
-public class Exam10 
+public class Practice 
 {
 
 	public static void main(String[] args) 
