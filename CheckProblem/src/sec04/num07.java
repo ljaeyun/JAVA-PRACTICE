@@ -43,7 +43,7 @@ public class num07
 			}
 			else if(inputNum == 3)
 			{
-				System.out.println(balance);
+				System.out.println("ÀÜ°í>" + balance);
 			}
 			else if(inputNum == 4)
 			{
